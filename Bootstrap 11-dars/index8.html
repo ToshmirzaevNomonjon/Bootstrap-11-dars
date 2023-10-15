@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main8.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-md-4">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                OPEN
+            </button>
+            <div class="modal fade" id="myModal">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="text-secondary">Edit</h5><span class="close" data-dismiss="modal">&times;</span>
+                        </div>
+                        <div class="modal-body">
+                            <label for="Title" class="text-secondary">Title:</label>
+                            <input type="text" id="Title" class="form-control" placeholder="Task Entinty"><br>
+                            <label for="Open" class="text-secondary">Status</label>
+                            <input type="text" id="Open" class="form-control"  placeholder="OPEN"><br>
+
+                            <div class="from-group">
+                                <label for="dist" class="text-secondary">Content:</label>
+                                <textarea name="dist" id="dist" class="form-control" placeholder="3 Write a Task POJO with the following properties: title, status of type Status(Enum),content"></textarea><br>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script src="js/jQuery.min.js"></script>
+<script src="js/src/popover.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
